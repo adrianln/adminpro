@@ -18,7 +18,6 @@ ajustes: Ajustes = {
 
 
   guadarAjustes() {
-    console.log('Guardado  en el localStorage ');
     localStorage.setItem('ajustes', JSON.stringify( this.ajustes ) );
   }
 
@@ -26,11 +25,9 @@ ajustes: Ajustes = {
 
     if ( localStorage.getItem('ajustes') ) {
       this.ajustes = JSON.parse( localStorage.getItem('ajustes') );
-      console.log( 'Cargando de localstorage' );
 
       this.aplicarTema( this.ajustes.tema );
     } else {
-      console.log( 'Usando valores por defecto' );
       this.aplicarTema( this.ajustes.tema );
     }
    }

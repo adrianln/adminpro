@@ -13,7 +13,7 @@ const pagesRoutes: Routes = [
             path: '',
             component: PagesComponent,
             children: [
-                {path: 'dashbord', component: DashboardComponent},
+                {path: 'dashboard', component: DashboardComponent},
                 {path: 'progress', component: ProgressComponent},
                 {path: 'graficas1', component: Graficas1Component},
                 {path: 'account-settings', component: AccoutSettingsComponent},
