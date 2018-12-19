@@ -15,6 +15,7 @@ export class AccoutSettingsComponent implements OnInit {
 
   ngOnInit() {
     this.colocarCheck();
+    /*  cuando la pagina es cargada se va adisparar esta funcion */
   }
   cambiarColor( tema: string, link: any ) {
     this.aplicarCheck( link );
@@ -37,6 +38,7 @@ export class AccoutSettingsComponent implements OnInit {
     const selectores: any = document.getElementsByClassName('selector');
 
     const tema = this._ajustes.ajustes.tema;
+
     for ( const ref of selectores ) {
      if ( ref.getAttribute('data-theme') === tema ) {
       ref.classList.add('working');

@@ -10,10 +10,12 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
 
 // ng2-charts
 
-import { ChartsModule } from 'ng2-charts';
+import { ChartsModule } from 'ng2-charts'; // es para las graficas
 
 import { GraficaDonaComponent } from '../components/grafica-dona/grafica-dona.component';
 import { AccoutSettingsComponent } from './accout-settings/accout-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { AccoutSettingsComponent } from './accout-settings/accout-settings.compo
         Graficas1Component,
         IncrementadorComponent,
         GraficaDonaComponent,
-        AccoutSettingsComponent
+        AccoutSettingsComponent,
+        PromesasComponent,
+        RxjsComponent
     ],
     exports: [
         DashboardComponent,
@@ -35,7 +39,7 @@ import { AccoutSettingsComponent } from './accout-settings/accout-settings.compo
         SharedModule,
         PAGES_ROUTES,
         FormsModule,
-        ChartsModule
+        ChartsModule      // para las graficas
     ]
 })
 export class PagesModule { }

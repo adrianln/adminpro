@@ -9,6 +9,7 @@ import { element } from 'protractor';
 export class IncrementadorComponent implements OnInit {
 
   @ViewChild('txtProgress') txtProgress: ElementRef;
+  // viewchild maneja elementos html y txtprogress es el nombre que se le da al elemento en el html. txtprogress es en el lado tyscrip
 
   @Input('nombre') leyenda: string = 'Leyenda';
   @Input() progreso: number = 50;
