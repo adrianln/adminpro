@@ -2,3 +2,7 @@
     cursor: pointer;
     /* para que salga una mano en el cursor*/
 }
+
+.pointer {
+    cursor: pointer;
+}
